@@ -112,7 +112,7 @@ function exercicio8() {
 const buttonExercicio8 = document.getElementById("exercicio8")
 buttonExercicio8.addEventListener('click', () => { exercicio8() })
 
-//exercicio 9
+// exercicio 9
 // 9. Peça três notas de um aluno, calcule a média e informe:
 
 //"Aprovado" se a média for maior ou igual a 7
@@ -139,4 +139,118 @@ function exercicio9() {
 const buttonExercicio9 = document.getElementById("exercicio9")
 buttonExercicio9.addEventListener('click', () => { exercicio9() })
 
+// exercicio 10
+// 10. Peça o sexo da pessoa (H para homem, M para mulher) e a altura. Use as fórmulas para calcular o peso ideal:
+
+//Homens: (72.7 × altura) - 58
+//Mulheres: (62.1 × altura) - 44.7
+
+
+function exercicio10() {
+    const sexo = prompt("Digite de acordo com seu sexo. H- Homem ou M- Mulher:")
+    const altura = Number(prompt("Digite sua altura. Exemplo: 1.70"))
+ 
+    if (sexo == "H") {
+        const resultadoH = (72.7 * altura) - 58
+        alert("Seu peso ideal é: " + resultadoH)
+    } else if (sexo == "M") {
+        const resultadoM = (62.1 * altura) - 44.7
+        alert("Seu peso ideal é: " + resultadoM)
+    }
+}
+const buttonExercicio10 = document.getElementById("exercicio10")
+buttonExercicio10.addEventListener('click', () => { exercicio10() })
+
+
+// exercicio 11
+//11. Peça dois números e uma operação matemática (+, -, *, /). Calcule e mostre o resultado da operação escolhida.
+
+
+function exercicio11() {
+    const numero = Number(prompt("Digite um número:"))
+    const outroNumero = Number(prompt("Digite outro número:"))
+    const funcao = prompt("Digite a função que voê de seja executar:")
+ 
+    if (funcao == "+") {
+        const resultadoSoma = numero + outroNumero
+        alert("O resultado da soma é: " + resultadoSoma)
+    } else if (funcao == "-") {
+        const resultadoSubtracao = (numero - outroNumero)
+        alert("O resultado da subtração é: " + resultadoSubtracao)
+    } else if (funcao == "*") {
+        const resultadoMultiplicacao = (numero * outroNumero)
+        alert("O resultado da multiplicação é: " + resultadoMultiplicacao)
+    } else if (funcao == "/") {
+        const resultadoDivisao = (numero / outroNumero)
+        alert("O resultado da divisão é: " + resultadoDivisao)
+    }
+}
+const buttonExercicio11 = document.getElementById("exercicio11")
+buttonExercicio11.addEventListener('click', () => { exercicio11() })
+
+
+// exercicio 12
+//12. Peça um número e informe se ele é positivo ou negativo.
+ 
+function exercicio12() {
+    const numero = Number(prompt("Digite um número:"))
+ 
+    if (numero >= 0 ) {
+        alert(numero + " é positivo.")
+    } else if (numero < 0 ) {
+        alert( numero + " é negativo.")
+    }
+}
+const buttonExercicio12 = document.getElementById("exercicio12")
+buttonExercicio12.addEventListener('click', () => { exercicio12()})
+ 
+// exercicio 13
+// 13. Peça um número inteiro e diga se ele é par ou ímpar.    (Dica: se o número dividido por 2 tiver resto 0, é par)
+function exercicio13() {
+    const numero = Number(prompt("Digite um número:"))
+ 
+    if (numero % 2 === 0) {
+        alert("Este número é par.")
+    } else {
+        alert("Este número é ímpar.")
+    }
+ 
+}
+const buttonExercicio13 = document.getElementById("exercicio13")
+buttonExercicio13.addEventListener('click', () => { exercicio13() })
+ 
+// exercicio 15
+// 15. Peça dois números e diga qual é o maior.
+
+function exercicio15() {
+    const numero = Number(prompt("Digite um número:"))
+    const outroNumero = Number(prompt("Digite outro número:"))
+ 
+    if (numero == outroNumero) {
+        alert("Esses números são iguais.")
+    } else if (numero > outroNumero) {
+        alert(numero + " é maior que " + outroNumero + ".")
+    } else if (numero < outroNumero) {
+        alert(numero + " é menor que " + outroNumero + ".")
+    }
+ 
+}
+const buttonExercicio15 = document.getElementById("exercicio15")
+buttonExercicio15.addEventListener('click', () => { exercicio15() })
+
+// exercicio 16
+// 16. Peça três valores e verifique se eles podem formar um triângulo.    Se sim, peça a base e a altura e calcule a área do triângulo.    Se não puderem formar um triângulo, mostre os valores lidos.
+
+function exercicio16() {
+    const numero = Number(prompt("Digite um número:"))
+    const outroNumero = Number(prompt("Digite outro número:"))
+    const maisumNúmero = Number(prompt("Digite mais um número:"))
+ 
+    const area = (numero + outroNumero + maisumNúmero) / 2
+    alert("a área do triângulo é " + area )
+ 
+}
+const buttonExercicio16 = document.getElementById("exercicio16")
+buttonExercicio16.addEventListener('click', () => { exercicio16() })
+ 
 
