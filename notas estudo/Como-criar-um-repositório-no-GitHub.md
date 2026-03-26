@@ -17,6 +17,7 @@ sai do git bash e vai pro vscode, botao direito ctrl K O
 entra na pasta/repositorio que vc criou 
 depois, botao direito no vazio, new filer, e escreve index html 
 pra criar o scripts, faz a mesma coisa mas clica no new folder 
+cd- e o nome do repos
 
 -------------------------------------------------------------------------------------------------------------------
 HTML
